@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nez", "Nez.Portable\Nez.localMG38.NET5.csproj", "{07B61BA0-E711-4FE6-8B8A-C949E7D79A7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nez.localMG38.NET5", "Nez.Portable\Nez.localMG38.NET5.csproj", "{07B61BA0-E711-4FE6-8B8A-C949E7D79A7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nez.localMG38.NET5.FarseerPhysics", "Nez.FarseerPhysics\Nez.localMG38.NET5.FarseerPhysics.csproj", "{83835879-C918-432D-BDC3-D032874C5CC8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nez.localMG38.NET5.ImGui", "Nez.ImGui\Nez.localMG38.NET5.ImGui.csproj", "{B684ADCF-BA9B-487A-9042-579D7C4F8754}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nez.localMG38.NET5.Persistence", "Nez.Persistence\Nez.localMG38.NET5.Persistence.csproj", "{4942064C-8139-453E-A4C9-BF9CE1192F28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{07B61BA0-E711-4FE6-8B8A-C949E7D79A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07B61BA0-E711-4FE6-8B8A-C949E7D79A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07B61BA0-E711-4FE6-8B8A-C949E7D79A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83835879-C918-432D-BDC3-D032874C5CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83835879-C918-432D-BDC3-D032874C5CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83835879-C918-432D-BDC3-D032874C5CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83835879-C918-432D-BDC3-D032874C5CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B684ADCF-BA9B-487A-9042-579D7C4F8754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B684ADCF-BA9B-487A-9042-579D7C4F8754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B684ADCF-BA9B-487A-9042-579D7C4F8754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B684ADCF-BA9B-487A-9042-579D7C4F8754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4942064C-8139-453E-A4C9-BF9CE1192F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4942064C-8139-453E-A4C9-BF9CE1192F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4942064C-8139-453E-A4C9-BF9CE1192F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4942064C-8139-453E-A4C9-BF9CE1192F28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
