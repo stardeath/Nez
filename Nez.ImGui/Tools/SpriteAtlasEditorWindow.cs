@@ -518,13 +518,13 @@ namespace Nez.ImGuiTools
 						var iterationDuration = secondsPerFrame * (float)frames.Count;
 						var currentElapsed = Time.TotalTime % iterationDuration;
 						var desiredFrame = Mathf.FloorToInt(currentElapsed / secondsPerFrame);
-						
+
 						var rect = _spriteAtlasData.SourceRects[frames[desiredFrame]];
 						var uv0 = rect.Location.ToNumerics() / _textureSize;
 						var uv1 = rect.GetSize().ToNumerics() / _textureSize;
 
 						var size = CalcBestFitRegion(new Num.Vector2(_animationPreviewSize), rect.GetSize().ToNumerics());
-						ImGui.SetCursorPosX((ImGui.GetWindowContentRegionWidth() - size.X) / 2f);
+						ImGui.SetCursorPosX((ImGui.GetContentRegionAvail().X - size.X) / 2f);
 						ImGui.Image(_texturePtr, size, uv0, uv0 + uv1);
 					}
 
