@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<AssemblyName>Nez.ImGui</AssemblyName>
+		<RootNamespace>Nez.ImGuiTools</RootNamespace>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DefineConstants>TRACE;DEBUG;MONOGAME_38</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<DefineConstants>MONOGAME_38</DefineConstants>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ImGui.NET" Version="1.86.0" />
+		<PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+		<ProjectReference Include="..\Nez.Persistence\Nez.localMG38.NET5.Persistence.csproj" />
+		<ProjectReference Include="..\Nez.Portable\Nez.localMG38.NET5.csproj" />
+		<Reference Include="MonoGame.Framework">
+			<HintPath>..\..\MonoGame\Artifacts\MonoGame.Framework\WindowsDX\Debug\net5.0-windows\MonoGame.Framework.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+</Project>
